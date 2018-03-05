@@ -1,0 +1,28 @@
+.removed{
+    text-decoration:line-through
+}
+.inline ul {
+    float: left;
+    width: 100px;
+}
+
+.inline:after{
+    clear: both;
+    content: 'asdasd';
+    display: block;
+}
+
+/*.left{*/
+    /*width: 30px;*/
+    /*height: auto;*/
+/*}*/
+
+/*.mid{*/
+    /*width: 40px;*/
+    /*height: auto;*/
+/*}*/
+
+/*.right{*/
+    /*width: 30px;*/
+    /*height: auto;*/
+/*}*/

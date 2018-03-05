@@ -1,0 +1,29 @@
+.bike_feature{ width:1200px; margin:0px auto; overflow:hidden; font-family:"Microsoft YaHei";}
+
+.carousel{width: 920px;float: right}
+
+.slidePic{height: 400px;width: 920px}
+
+.select{height: 400px;width: 2600px;margin-right: 30px}
+
+.welcome{height: 40px;width: 260px;border:1px solid #E4E6E7}
+
+.types{height: 120px;width: 260px;border:1px solid #E4E6E7}
+
+.uses{height: 120px;width: 260px;border:1px solid #E4E6E7}
+
+.distances{height: 120px;width: 260px;border:1px solid #E4E6E7;}
+
+.type{display: inline;margin-right: 15px}
+
+.use{display: inline;margin-right: 15px}
+
+.dist{display: inline;margin-right: 15px;float: left}
+
+.welcome,.types,.uses,.distances{background-color: #fafafa}
+
+.type,.use,.dist{cursor: pointer}
+
+.margin-out{margin: 15px}
+
+.margin-inner{margin-bottom: 10px}

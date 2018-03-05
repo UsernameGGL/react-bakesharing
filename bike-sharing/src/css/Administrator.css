@@ -1,0 +1,21 @@
+.reactHighcharts{
+    width: 50%;
+    float: left;
+}
+
+.highBlock{
+    overflow: hidden;
+}
+
+.totalWidth{
+    width: 1400px;
+}
+
+.verticalNavigation{
+    float: left;
+    height: 1000px;
+}
+
+.horizontalNavigation{
+    margin-bottom: 30px;
+}

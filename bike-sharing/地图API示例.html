@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://lbsyun.baidu.com/jsdemo.htm#a6_2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>地图API示例</title>
+    
+    <link rel="stylesheet" href="./地图API示例_files/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="./地图API示例_files/base.css">
+</head>
+<body onload="mapheight();" style="zoom: 1;">
+	<div id="header">
+		<a class="logo">
+			<img src="./地图API示例_files/logo.png">
+		</a>
+	</div>
+	<div id="content">
+		<div id="menu">
+			<ul>
+				<li id="list_item1">
+					<a class="one_head" listid="1"><i class="t_close"></i>地图示例</a>
+					<div id="submenu1" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a1_2.htm" onclick="setIntro(&#39;a1_2&#39;);" target="container">地图展示</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a1_5.htm" onclick="setIntro(&#39;a1_5&#39;);" target="container">异步加载地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a1_6.htm" onclick="setIntro(&#39;a1_6&#39;);" target="container">同时加载两个地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a2_1.htm" onclick="setIntro(&#39;a2_1&#39;);" target="container">根据城市名设置地图中心点</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a2_3.htm" onclick="setIntro(&#39;a2_3&#39;);" target="container">设置地图最大、最小级别</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a3_1.htm" onclick="setIntro(&#39;a3_1&#39;);" target="container">移动地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a3_2.htm" onclick="setIntro(&#39;a3_2&#39;);" target="container">缩放地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a3_3.htm" onclick="setIntro(&#39;a3_3&#39;);" target="container">拖拽地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a1_7.htm" onclick="setIntro(&#39;a1_7&#39;);" target="container">设置地图显示范围</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a4_3.htm" onclick="setIntro(&#39;a4_3&#39;);" target="container">获取地图显示范围</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a6_1.htm" onclick="setIntro(&#39;a6_1&#39;);" target="container">获取两点间距离</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a7_1.htm" onclick="setIntro(&#39;a7_1&#39;);" target="container">关闭默认地图POI事件</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item2">
+					<a class="one_head" listid="2"><i class="t_close"></i>地图控件示例</a>
+					<div id="submenu2" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/b0_2.htm" onclick="setIntro(&#39;b0_2&#39;);" target="container">添加/删除工具条、比例尺控件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/b0_3.htm" onclick="setIntro(&#39;b0_3&#39;);" target="container">添加/删除地图类型、缩略图控件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/b0_7.htm" onclick="setIntro(&#39;b0_7&#39;);" target="container">添加定位相关控件<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/b0_4.htm" onclick="setIntro(&#39;b0_4&#39;);" target="container">添加第三方版权控件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/b0_6.htm" onclick="setIntro(&#39;b0_6&#39;);" target="container">添加自定义控件</a></dd>
+                            <dd><a href="http://lbsyun.baidu.com/jsdemo/demo/b_07.htm" onclick="setIntro(&#39;b_07&#39;);" target="container">添加城市列表控件</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item3">
+					<a class="one_head" listid="3"><i class="t_close"></i>覆盖物示例</a>
+					<div id="submenu3" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_1.htm" onclick="setIntro(&#39;c1_1&#39;);" target="container">添加/删除覆盖物</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_25.htm" onclick="setIntro(&#39;c1_25&#39;);" target="container">折线上添加方向箭头</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_2.htm" onclick="setIntro(&#39;c1_2&#39;);" target="container">设置点的弹跳动画</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_16.htm" onclick="setIntro(&#39;c1_16&#39;);" target="container">设置点的新图标</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_2.htm" onclick="setIntro(&#39;c2_2&#39;);" target="container">设置点是否可拖拽</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_9.htm" onclick="setIntro(&#39;c2_9&#39;);" target="container">设置线、面可编辑</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_1.htm" onclick="setIntro(&#39;c2_1&#39;);" target="container">设置覆盖物显示/隐藏</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_14.htm" onclick="setIntro(&#39;c1_14&#39;);" target="container">添加文字标签</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_3.htm" onclick="setIntro(&#39;c2_3&#39;);" target="container">设置覆盖物的文字标签</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_4.htm" onclick="setIntro(&#39;c2_4&#39;);" target="container">获取覆盖物信息</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_3.htm" onclick="setIntro(&#39;c1_3&#39;);" target="container">添加多个点示例</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_17.htm" onclick="setIntro(&#39;c1_17&#39;);" target="container">从多个点里删除特定点</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_6.htm" onclick="setIntro(&#39;c1_6&#39;);" target="container">加载闪烁点</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_19.htm" onclick="setIntro(&#39;c1_19&#39;);" target="container">加载海量点<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_13.htm" onclick="setIntro(&#39;c1_13&#39;);" target="container">添加弧线</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_7.htm" onclick="setIntro(&#39;c1_7&#39;);" target="container">添加椭圆</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_10.htm" onclick="setIntro(&#39;c1_10&#39;);" target="container">添加行政区划</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_11.htm" onclick="setIntro(&#39;c1_11&#39;);" target="container">添加自定义覆盖物</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_18.htm" onclick="setIntro(&#39;c1_18&#39;);" target="container">添加/删除地面叠加层</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_4.htm" onclick="setIntro(&#39;c1_4&#39;);" target="container">点聚合</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_15.htm" onclick="setIntro(&#39;c1_15&#39;);" target="container">添加热力图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c1_20.html" onclick="setIntro(&#39;c1_20&#39;);" target="container">矢量图标<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<!--<dd><a href="jsdemo/demo/c1_5.htm" onClick="setIntro('c1_5');" target="container">添加Voronoi图</a></dd>-->
+						</dl>
+					</div>
+				</li>
+				<li id="list_item4">
+					<a class="one_head" listid="4"><i class="t_close"></i>信息窗口示例</a>
+					<div id="submenu4" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/d0_1.htm" onclick="setIntro(&#39;d0_1&#39;);" target="container">添加纯文字的信息窗口</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/d0_2.htm" onclick="setIntro(&#39;d0_2&#39;);" target="container">添加图文组合的信息窗口</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/d0_4.htm" onclick="setIntro(&#39;d0_4&#39;);" target="container">添加带检索功能的信息窗口</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/d0_5.htm" onclick="setIntro(&#39;d0_5&#39;);" target="container">给多个点添加信息窗口</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/d0_3.htm" onclick="setIntro(&#39;d0_3&#39;);" target="container">获取信息窗口的内容</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item5">
+					<a class="one_head" listid="5"><i class="t_close"></i>右键菜单示例</a>
+					<div id="submenu5" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/e0_1.htm" onclick="setIntro(&#39;e0_1&#39;);" target="container">给地图添加右键菜单</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/e0_4.htm" onclick="setIntro(&#39;e0_4&#39;);" target="container">给覆盖物添加右键菜单</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item6">
+					<a class="one_head" listid="6"><i class="t_close"></i>鼠标示例</a>
+					<div id="submenu6" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/f0_1.htm" onclick="setIntro(&#39;f0_1&#39;);" target="container">设置鼠标样式</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/f0_4.htm" onclick="setIntro(&#39;f0_4&#39;);" target="container">鼠标滚轮缩放地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/f0_5.htm" onclick="setIntro(&#39;f0_5&#39;);" target="container">鼠标拉框放大地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/f0_6.htm" onclick="setIntro(&#39;f0_6&#39;);" target="container">鼠标测距</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/f0_3.htm" onclick="setIntro(&#39;f0_3&#39;);" target="container">鼠标点击拾取坐标</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/f0_7.htm" onclick="setIntro(&#39;f0_7&#39;);" target="container">鼠标绘制点线面</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item7">
+					<a class="one_head" listid="7"><i class="t_close"></i>叠加层示例</a>
+					<div id="submenu7" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/g0_3.htm" onclick="setIntro(&#39;g0_3&#39;);" target="container">叠加/删除路况图层</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/g0_2.htm" onclick="setIntro(&#39;g0_2&#39;);" target="container">叠加/删除清华微观图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/g0_1.htm" onclick="setIntro(&#39;g0_1&#39;);" target="container">叠加/删除魔兽地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/g0_5.htm" onclick="setIntro(&#39;g0_5&#39;);" target="container">叠加/删除自定义网格</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item8">
+					<a class="one_head" listid="8"><i class="t_close"></i>事件示例</a>
+					<div id="submenu8" class="submenu" style="">
+						<dl>              
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/h0_2.htm" onclick="setIntro(&#39;h0_2&#39;);" target="container">图块加载完成事件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/h0_4.htm" onclick="setIntro(&#39;h0_4&#39;);" target="container">地图单击事件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/h0_1.htm" onclick="setIntro(&#39;h0_1&#39;);" target="container">给覆盖物注册事件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/h0_3.htm" onclick="setIntro(&#39;h0_3&#39;);" target="container">传递事件参数</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/h0_5.htm" onclick="setIntro(&#39;h0_5&#39;);" target="container">为多个点注册点击事件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/h0_6.htm" onclick="setIntro(&#39;h0_6&#39;);" target="container">注销事件</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item9">
+					<a class="one_head" listid="9"><i class="t_close"></i>GPS功能</a>
+					<div id="submenu9" class="submenu" style="">
+						<dl>              
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_5.htm" onclick="setIntro(&#39;c2_5&#39;);" target="container">单个点沿线运动</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_6.htm" onclick="setIntro(&#39;c2_6&#39;);" target="container">多点沿线运动</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/c2_8.htm" onclick="setIntro(&#39;c2_8&#39;);" target="container">路书</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item10">
+					<a class="one_head" listid="10"><i class="t_close"></i>全景图示例<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a>
+					<div id="submenu10" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j1_0.htm" onclick="setIntro(&#39;j1_0&#39;);" target="container">全景控件展示</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j1_1.htm" onclick="setIntro(&#39;j1_1&#39;);" target="container">获取指定的全景图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j1_2.htm" onclick="setIntro(&#39;j1_2&#39;);" target="container">叠加全景图层</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j5_3.htm" onclick="setIntro(&#39;j5_3&#39;);" target="container">显示/隐藏全景导航控件<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j5_4.htm" onclick="setIntro(&#39;j5_4&#39;);" target="container">显示/隐藏全景道路指引控件<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j5_5.htm" onclick="setIntro(&#39;j5_5&#39;);" target="container">添加/删除全景相册控件<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j5_7.htm" onclick="setIntro(&#39;j5_7&#39;);" target="container">显示/隐藏室内景切换控件<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j5_8.htm" onclick="setIntro(&#39;j5_8&#39;);" target="container">添加全景标注点示例<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j5_9.htm" onclick="setIntro(&#39;j5_9&#39;);" target="container">设置全景内展示的POI类型<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j2_0.htm" onclick="setIntro(&#39;j2_0&#39;);" target="container">全景图旋转</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j4_0.htm" onclick="setIntro(&#39;j4_0&#39;);" target="container">全景图事件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/j3_0.htm" onclick="setIntro(&#39;j3_0&#39;);" target="container">获取全景图数据</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item11">
+					<a class="one_head" listid="11"><i class="t_close"></i>个性化地图</a>
+					<div id="submenu11" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/k0_2.htm" onclick="setIntro(&#39;k0_2&#39;);" target="container">设置主题模板样式</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/k0_3.htm" onclick="setIntro(&#39;k0_3&#39;);" target="container">设置自定义样式</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item12">
+					<a class="one_head" listid="12"><i class="t_close"></i>检索示例</a>
+					<div id="submenu12" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i1_1.htm" onclick="setIntro(&#39;i1_1&#39;);" target="container">关键字检索</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i1_3.htm" onclick="setIntro(&#39;i1_3&#39;);" target="container">多关键字检索</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i1_2.htm" onclick="setIntro(&#39;i1_2&#39;);" target="container">矩形区域检索</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i3_2.htm" onclick="setIntro(&#39;i3_2&#39;);" target="container">圆形区域检索</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i1_6.htm" onclick="setIntro(&#39;i1_6&#39;);" target="container">本地检索的结果面板</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i1_4.htm" onclick="setIntro(&#39;i1_4&#39;);" target="container">本地检索的数据接口</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i3_4.htm" onclick="setIntro(&#39;i3_4&#39;);" target="container">检索LBS云数据</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item13">
+					<a class="one_head" listid="13"><i class="t_close"></i>公交检索接口</a>
+					<div id="submenu13" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_1.htm" onclick="setIntro(&#39;i4_1&#39;);" target="container">根据起终点名称查询公交换乘</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_2.htm" onclick="setIntro(&#39;i4_2&#39;);" target="container">根据起终点经纬度查询公交换乘</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_5.htm" onclick="setIntro(&#39;i4_5&#39;);" target="container">起终点不明确的公交换乘</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_7.htm" onclick="setIntro(&#39;i4_7&#39;);" target="container">公交换乘的结果面板</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_8.htm" onclick="setIntro(&#39;i4_8&#39;);" target="container">公交换乘的数据接口</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_9.htm" onclick="setIntro(&#39;i4_9&#39;);" target="container">修改公交换乘的起终点图标</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_4.htm" onclick="setIntro(&#39;i4_4&#39;);" target="container">查询公交、地铁线路</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i4_6.htm" onclick="setIntro(&#39;i4_6&#39;);" target="container">获取公交换乘的时间、距离</a></dd>							
+						</dl>
+					</div>
+				</li>
+				<li id="list_item14">
+					<a class="one_head" listid="14"><i class="t_close"></i>驾车线路规划</a>
+					<div id="submenu14" class="submenu" style="">
+						 <dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i5_1.htm" onclick="setIntro(&#39;i5_1&#39;);" target="container">根据起终点名称查询驾车路线</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i5_2.htm" onclick="setIntro(&#39;i5_2&#39;);" target="container">根据起终点经纬度查询驾车路线</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i5_4.htm" onclick="setIntro(&#39;i5_4&#39;);" target="container">鼠标拖拽驾车起终点/途经点</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i5_9.htm" onclick="setIntro(&#39;i5_9&#39;);" target="container">动态设置驾车途经点<span style="font-size: 10px; padding-left: 5px; color: red;">new</span></a></dd>
+							<!--<dd><a href="jsdemo/demo/i5_3.htm" onClick="setIntro('i5_3');" target="container">设置驾车多途经点</a></dd>--暂时还不支持-->
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i5_8.htm" onclick="setIntro(&#39;i5_8&#39;);" target="container">驾车路线的结果面板</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i5_7.htm" onclick="setIntro(&#39;i5_7&#39;);" target="container">驾车路线的数据接口</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i5_5.htm" onclick="setIntro(&#39;i5_5&#39;);" target="container">计算驾车时间和距离</a></dd>
+							<!-- <dd><a href="jsdemo/demo/i5_6.htm" onClick="setIntro('i5_6');" target="container">计算打车费用</a></dd> -->
+						</dl>
+					</div>
+				</li>
+				<li id="list_item15">
+					<a class="one_head" listid="15"><i class="t_close"></i>步行规划</a>
+					<div id="submenu15" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i6_1.htm" onclick="setIntro(&#39;i6_1&#39;);" target="container">根据起终点名称规划步行线路</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i6_2.htm" onclick="setIntro(&#39;i6_2&#39;);" target="container">步行规划结果面板</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item16">
+					<a class="one_head" listid="16"><i class="t_close"></i>逆/地址解析</a>
+					<div id="submenu16" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i7_1.htm" onclick="setIntro(&#39;i7_1&#39;);" target="container">地址解析</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i7_2.htm" onclick="setIntro(&#39;i7_2&#39;);" target="container">逆地址解析</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i7_3.htm" onclick="setIntro(&#39;i7_3&#39;);" target="container">批量地址解析</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i7_4.htm" onclick="setIntro(&#39;i7_4&#39;);" target="container">批量逆地址解析</a></dd>                        
+						</dl>
+					</div>
+				</li>
+				<li id="list_item17">
+					<a class="one_head" listid="17"><i class="t_close"></i>坐标转换</a>
+					<div id="submenu17" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a5_1.htm" onclick="setIntro(&#39;a5_1&#39;);" target="container">google坐标转成百度坐标</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a5_2.htm" onclick="setIntro(&#39;a5_2&#39;);" target="container">原始坐标转成百度坐标</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a5_3.htm" onclick="setIntro(&#39;a5_3&#39;);" target="container">批量坐标转换</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item18">
+					<a class="one_head open clickState" listid="18"><i class="t_close t_open"></i>输入提示示例</a>
+					<div id="submenu18" class="submenu" style="display: block;">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/a6_2.htm" onclick="setIntro(&#39;a6_2&#39;);" target="container" class="clickState">关键字提示输入</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item19">
+					<a class="one_head" listid="19"><i class="t_close"></i>定位示例</a>
+					<div id="submenu19" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i8_1.htm" onclick="setIntro(&#39;i8_1&#39;);" target="container">浏览器定位</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i8_2.htm" onclick="setIntro(&#39;i8_2&#39;);" target="container">根据ip定位</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i8_3.htm" onclick="setIntro(&#39;i8_3&#39;);" target="container">根据城市名定位</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/i8_4.htm" onclick="setIntro(&#39;i8_4&#39;);" target="container">根据经纬度定位</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item20">
+					<a class="one_head" listid="20"><i class="t_close"></i>JavaScript API Lite</a>
+					<div id="submenu20" class="submenu" style="">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_0_0.htm" onclick="setIntro(&#39;lite_0_0&#39;);" target="container">基础地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_0_1.htm" onclick="setIntro(&#39;lite_0_1&#39;);" target="container">&nbsp;个性化地图</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_1_0.htm" onclick="setIntro(&#39;lite_1_0&#39;);" target="container">&nbsp;缩放控件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_1_1.htm" onclick="setIntro(&#39;lite_1_1&#39;);" target="container">&nbsp;比例尺控件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_1_2.htm" onclick="setIntro(&#39;lite_1_2&#39;);" target="container">&nbsp;自定义控件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_2_0.htm" onclick="setIntro(&#39;lite_2_0&#39;);" target="container">&nbsp;点标注覆盖物</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_2_1.htm" onclick="setIntro(&#39;lite_2_1&#39;);" target="container">&nbsp;自定义覆盖物</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_2_2.htm" onclick="setIntro(&#39;lite_2_2&#39;);" target="container">&nbsp;海量覆盖物</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_3_0.htm" onclick="setIntro(&#39;lite_3_0&#39;);" target="container">&nbsp;地图事件</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/lite_3_1.htm" onclick="setIntro(&#39;lite_3_1&#39;);" target="container">&nbsp;点覆盖物事件</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li id="list_item21">
+					<a class="one_head" listid="21"><i class="t_close"></i>JavaScript API v3.0</a>
+					<div id="submenu21" class="submenu" style="display: none;">
+						<dl>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/canvaslayer.htm" onclick="setIntro(&#39;canvaslayer&#39;);" target="container" class="">自定义绘制层</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/drivingroute.htm" onclick="setIntro(&#39;drivingroute&#39;);" target="container">驾车路线规划</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/transitroute.htm" onclick="setIntro(&#39;transitroute&#39;);" target="container">公交路线规划</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/walkingroute.htm" onclick="setIntro(&#39;walkingroute&#39;);" target="container">步行路线规划</a></dd>
+							<dd><a href="http://lbsyun.baidu.com/jsdemo/demo/ridingroute.htm" onclick="setIntro(&#39;ridingroute&#39;);" target="container">骑行路线规划</a></dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="code_area" unselectable="on" style="width: 852px;">
+			<div id="openbar" unselectable="on">
+				<div id="d_menu"> 
+					<div id="d_clip_container"><a id="d_clip_button" class="copy" style="z-index: 1000;">复制</a></div>
+					<div id="d_run_container"><a id="d_run_button" onclick="run();" class="run">运行</a></div>
+					<div id="d_refresh_container"><a id="d_refresh_button" onclick="refresh();">刷新</a></div>
+					<div id="d_help_container"><a id="d_help_button" href="http://bbs.lbsyun.baidu.com/" target="_blank">帮助</a></div>
+				</div>
+				<p>源代码编辑器</p>
+			</div>
+			<textarea id="myresource" class="clearfix" onchange="clip.setText(this.value)" style="display: none; width: 681.6px;"></textarea><div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 640.338px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 0px;"><div style="height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 0px;"><div style="width: 1px; height: 1310px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 1310.4px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1; display: none;"><div class="CodeMirror-selected" style="position: absolute; left: 43.525px; top: 283.2px; width: 797.475px; height: 14.4px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 459.2px; width: 137.925px; height: 14.4px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 297.6px; width: 837px; height: 161.6px;"></div></div><div class="CodeMirror-code" style=""><pre><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></pre><pre><span class="cm-tag">&lt;html&gt;</span></pre><pre><span class="cm-tag">&lt;head&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">"Content-Type"</span> <span class="cm-attribute">content</span>=<span class="cm-string">"text/html; charset=utf-8"</span> <span class="cm-tag">/&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">"viewport"</span> <span class="cm-attribute">content</span>=<span class="cm-string">"initial-scale=1.0, user-scalable=no"</span> <span class="cm-tag">/&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;style</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/css"</span><span class="cm-tag">&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tag">body</span>, <span class="cm-tag">html</span>{<span class="cm-property">width</span>: <span class="cm-number">100%</span>;<span class="cm-property">height</span>: <span class="cm-number">100%</span>;<span class="cm-property">margin</span>:<span class="cm-number">0</span>;<span class="cm-property">font-family</span>:<span class="cm-string">"微软雅黑"</span>;<span class="cm-property">font-size</span>:<span class="cm-number">14px</span>;}</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-builtin">#l-map</span>{<span class="cm-property">height</span>:<span class="cm-number">300px</span>;<span class="cm-property">width</span>:<span class="cm-number">100%</span>;}</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-builtin">#r-result</span>{<span class="cm-property">width</span>:<span class="cm-number">100%</span>;}</pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;/style&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;script</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/javascript"</span> <span class="cm-attribute">src</span>=<span class="cm-string">"http://api.map.baidu.com/api?v=2.0&amp;ak=您的密钥"</span><span class="cm-tag">&gt;&lt;/script&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;title&gt;</span>关键字输入提示词条<span class="cm-tag">&lt;/title&gt;</span></pre><pre><span class="cm-tag">&lt;/head&gt;</span></pre><pre><span class="cm-tag">&lt;body&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"l-map"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"r-result"</span><span class="cm-tag">&gt;</span>请输入:<span class="cm-tag">&lt;input</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"suggestId"</span> <span class="cm-attribute">size</span>=<span class="cm-string">"20"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"百度"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"width:150px;"</span> <span class="cm-tag">/&gt;&lt;/div&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-tag">&lt;div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"searchResultPanel"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"border:1px solid #C0C0C0;width:150px;height:auto; display:none;"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre><pre><span class="cm-tag">&lt;/body&gt;</span></pre><pre><span class="cm-tag">&lt;/html&gt;</span></pre><pre><span class="cm-tag">&lt;script</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/javascript"</span><span class="cm-tag">&gt;</span></pre><pre><span class="cm-tab">    </span><span class="cm-comment">// 百度地图API功能</span></pre><pre><span class="cm-tab">    </span><span class="cm-keyword">function</span> <span class="cm-variable">G</span>(<span class="cm-def">id</span>) {</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">return</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-variable-2">id</span>);</pre><pre><span class="cm-tab">    </span>}</pre><pre>&nbsp;</pre><pre><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-variable">map</span> = <span class="cm-keyword">new</span> <span class="cm-variable">BMap</span>.<span class="cm-property">Map</span>(<span class="cm-string">"l-map"</span>);</pre><pre><span class="cm-tab">    </span><span class="cm-variable">map</span>.<span class="cm-property">centerAndZoom</span>(<span class="cm-string">"北京"</span>,<span class="cm-number">12</span>); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// 初始化地图,设置城市和地图级别。</span></pre><pre>&nbsp;</pre><pre><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-variable">ac</span> = <span class="cm-keyword">new</span> <span class="cm-variable">BMap</span>.<span class="cm-property">Autocomplete</span>( &nbsp;  <span class="cm-comment">//建立一个自动完成的对象</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>{<span class="cm-string cm-property">"input"</span> : <span class="cm-string">"suggestId"</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>,<span class="cm-string cm-property">"location"</span> : <span class="cm-variable">map</span></pre><pre><span class="cm-tab">    </span>});</pre><pre>&nbsp;</pre><pre><span class="cm-tab">    </span><span class="cm-variable">ac</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">"onhighlight"</span>, <span class="cm-keyword">function</span>(<span class="cm-def">e</span>) {  <span class="cm-comment">//鼠标放在下拉列表上的事件</span></pre><pre><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">str</span> = <span class="cm-string">""</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">_value</span> = <span class="cm-variable-2">e</span>.<span class="cm-property">fromitem</span>.<span class="cm-property">value</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">value</span> = <span class="cm-string">""</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">if</span> (<span class="cm-variable-2">e</span>.<span class="cm-property">fromitem</span>.<span class="cm-property">index</span> &gt; -<span class="cm-number">1</span>) {</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">value</span> = <span class="cm-variable-2">_value</span>.<span class="cm-property">province</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">city</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">district</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">street</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">business</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>} &nbsp;  </pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">str</span> = <span class="cm-string">"FromItem&lt;br /&gt;index = "</span> + <span class="cm-variable-2">e</span>.<span class="cm-property">fromitem</span>.<span class="cm-property">index</span> + <span class="cm-string">"&lt;br /&gt;value = "</span> + <span class="cm-variable-2">value</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">value</span> = <span class="cm-string">""</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">if</span> (<span class="cm-variable-2">e</span>.<span class="cm-property">toitem</span>.<span class="cm-property">index</span> &gt; -<span class="cm-number">1</span>) {</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">_value</span> = <span class="cm-variable-2">e</span>.<span class="cm-property">toitem</span>.<span class="cm-property">value</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">value</span> = <span class="cm-variable-2">_value</span>.<span class="cm-property">province</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">city</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">district</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">street</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">business</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>} &nbsp;  </pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">str</span> += <span class="cm-string">"&lt;br /&gt;ToItem&lt;br /&gt;index = "</span> + <span class="cm-variable-2">e</span>.<span class="cm-property">toitem</span>.<span class="cm-property">index</span> + <span class="cm-string">"&lt;br /&gt;value = "</span> + <span class="cm-variable-2">value</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">G</span>(<span class="cm-string">"searchResultPanel"</span>).<span class="cm-property">innerHTML</span> = <span class="cm-variable-2">str</span>;</pre><pre><span class="cm-tab">    </span>});</pre><pre>&nbsp;</pre><pre><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-variable">myValue</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-variable">ac</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">"onconfirm"</span>, <span class="cm-keyword">function</span>(<span class="cm-def">e</span>) { &nbsp;  <span class="cm-comment">//鼠标点击下拉列表后的事件</span></pre><pre><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">_value</span> = <span class="cm-variable-2">e</span>.<span class="cm-property">item</span>.<span class="cm-property">value</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">myValue</span> = <span class="cm-variable-2">_value</span>.<span class="cm-property">province</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">city</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">district</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">street</span> +  <span class="cm-variable-2">_value</span>.<span class="cm-property">business</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">G</span>(<span class="cm-string">"searchResultPanel"</span>).<span class="cm-property">innerHTML</span> =<span class="cm-string">"onconfirm&lt;br /&gt;index = "</span> + <span class="cm-variable-2">e</span>.<span class="cm-property">item</span>.<span class="cm-property">index</span> + <span class="cm-string">"&lt;br /&gt;myValue = "</span> + <span class="cm-variable">myValue</span>;</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">setPlace</span>();</pre><pre><span class="cm-tab">    </span>});</pre><pre>&nbsp;</pre><pre><span class="cm-tab">    </span><span class="cm-keyword">function</span> <span class="cm-variable">setPlace</span>(){</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">map</span>.<span class="cm-property">clearOverlays</span>(); &nbsp;  <span class="cm-comment">//清除地图上所有覆盖物</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">function</span> <span class="cm-def">myFun</span>(){</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">pp</span> = <span class="cm-variable">local</span>.<span class="cm-property">getResults</span>().<span class="cm-property">getPoi</span>(<span class="cm-number">0</span>).<span class="cm-property">point</span>; &nbsp;  <span class="cm-comment">//获取第一个智能搜索的结果</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">map</span>.<span class="cm-property">centerAndZoom</span>(<span class="cm-variable-2">pp</span>, <span class="cm-number">18</span>);</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">map</span>.<span class="cm-property">addOverlay</span>(<span class="cm-keyword">new</span> <span class="cm-variable">BMap</span>.<span class="cm-property">Marker</span>(<span class="cm-variable-2">pp</span>)); &nbsp;  <span class="cm-comment">//添加标注</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>}</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">var</span> <span class="cm-def">local</span> = <span class="cm-keyword">new</span> <span class="cm-variable">BMap</span>.<span class="cm-property">LocalSearch</span>(<span class="cm-variable">map</span>, { <span class="cm-comment">//智能搜索</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>  <span class="cm-property">onSearchComplete</span>: <span class="cm-variable-2">myFun</span></pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>});</pre><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable-2">local</span>.<span class="cm-property">search</span>(<span class="cm-variable">myValue</span>);</pre><pre><span class="cm-tab">    </span>}</pre><pre><span class="cm-tag">&lt;/script&gt;</span></pre><pre>&nbsp;</pre></div><div class="CodeMirror-cursor" style="left: 638.338px; top: 177.6px; height: 14.4px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 1310.4px;"></div><div class="CodeMirror-gutters" style="display: none; height: 1310.4px;"></div></div></div>
+			<div id="code_close" onclick="toggleFooter();" style="display: block;"></div>
+		</div>
+		<div id="drag"></div>
+		<div id="mapContent" class="clearfix">
+			<div id="code_open" onclick="toggleFooter();" style="display: none;"></div>
+			<div id="overiframe" style="background: url(&quot;about:_blank&quot;); display: none; width: 397px;" unselectable="on"></div>
+			<iframe class="" unselectable="on" name="container" id="container" src="./地图API示例_files/a6_2.html" style="width: 398px; height: 660px;"></iframe>
+		</div>
+	</div>
+    <!--for jsdemo guide-->
+<script type="text/javascript" src="./地图API示例_files/codemirror.min.js.下载"></script>
+<script type="text/javascript" src="./地图API示例_files/ZeroClipboard.js.下载"></script>
+<script src="./地图API示例_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./地图API示例_files/map.js.下载"></script><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_1" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_2" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=0&amp;height=0" wmode="transparent"></div>
+
+<!-- <script type="text/javascript" src="jsdemo/demoGuide.js"></script> -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5650c092812f8659cdfe23eeb42024ef' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./地图API示例_files/h.js.下载" type="text/javascript"></script>
+
+
+<div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_3" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_3" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=3&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_4" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_4" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=4&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_5" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_5" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=5&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_6" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_6" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=6&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_7" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_7" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=7&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_8" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_8" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=8&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_9" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_9" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=9&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_10" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_10" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=10&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_11" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_11" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=11&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_12" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_12" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=12&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_13" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_13" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=13&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_14" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_14" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=14&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_15" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_15" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=15&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_16" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_16" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=16&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_17" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_17" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=17&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_18" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_18" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=18&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_19" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_19" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=19&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_20" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_20" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=20&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_21" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_21" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=21&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_22" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_22" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=22&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_23" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_23" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=23&amp;width=0&amp;height=0" wmode="transparent"></div><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: 1001;"><embed id="ZeroClipboardMovie_24" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="0" height="0" name="ZeroClipboardMovie_24" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=24&amp;width=0&amp;height=0" wmode="transparent"></div></body></html>
